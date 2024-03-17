@@ -12,19 +12,38 @@ prev.addEventListener("click", function minusSlides(){
 });
 
 let img1 = document.querySelector(".img1");
-img1.addEventListener("click", function firstSlide(){
-    showSlides(slideIndex = 1);
+img1.addEventListener("click", () => {
+    individualClickSlide();
 });
 
 let img2 = document.querySelector(".img2");
 img2.addEventListener("click", function secondSlide(){
-    showSlides(slideIndex = 2);
+    individualClickSlide();
 });
 
 let img3 = document.querySelector(".img3");
 img3.addEventListener("click", function thirdSlide(){
-    showSlides(slideIndex = 3);
+    individualClickSlide();
 });
+
+function individualClickSlide(){
+    let i;
+    let slides = document.querySelectorAll(".mySlides");
+    let dots = document.querySelectorAll(".dot");
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+        dots[i].classList.remove("active");
+    }
+    //ensure slideIndex is within bounds
+    if (slideIndex >= slides.length){
+        slideIndex = 0;
+    } else if (slideIndex < 0){
+        slideIndex = slides.length - 1;
+    }
+
+    slides[slideIndex].style.display = "block";
+    dots[slideIndex].className += " active";
+}
 
 function showSlides(n){
     let i;
