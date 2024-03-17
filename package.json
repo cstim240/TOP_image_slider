@@ -1,0 +1,19 @@
+{
+  "name": "image_slider_top",
+  "version": "1.0.0",
+  "description": "Template Image Slider ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cstim240/TOP_image_slider.git"
+  },
+  "author": "Tim Supan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cstim240/TOP_image_slider/issues"
+  },
+  "homepage": "https://github.com/cstim240/TOP_image_slider#readme"
+}
