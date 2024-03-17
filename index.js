@@ -13,8 +13,8 @@ prev.addEventListener("click", function minusSlides(){
 
 function showSlides(n){
     let i;
-    let slides = document.querySelector(".mySlides");
-    let dots = document.querySelector(".dot");
+    let slides = document.querySelectorAll(".mySlides");
+    let dots = document.querySelectorAll(".dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
 
