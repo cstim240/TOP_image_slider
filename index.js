@@ -11,6 +11,21 @@ prev.addEventListener("click", function minusSlides(){
     showSlides(slideIndex -= 1);
 });
 
+let img1 = document.querySelector(".img1");
+img1.addEventListener("click", function firstSlide(){
+    showSlides(slideIndex = 1);
+});
+
+let img2 = document.querySelector(".img2");
+img2.addEventListener("click", function secondSlide(){
+    showSlides(slideIndex = 2);
+});
+
+let img3 = document.querySelector(".img3");
+img3.addEventListener("click", function thirdSlide(){
+    showSlides(slideIndex = 3);
+});
+
 function showSlides(n){
     let i;
     let slides = document.querySelectorAll(".mySlides");
